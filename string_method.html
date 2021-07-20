@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    </head>
+    <body>
+        <div class="container">
+        Javascript Tutorial
+        <script>
+            //Write Your JS Here
+            var str="Paarth Bathla";
+            console.log("str");
+            // Getting Index
+            //Gives the First Occurence of the Substring 
+            console.log(str.indexOf("Bathla"));
+            //Gives the Last Occurence of the Substring 
+            console.log(str.lastIndexOf("Paarth"));
+            //Getting Substring from a String 
+            console.log(str.slice(0,));
+            console.log(str.substring(0),);
+            //Difference between Slice and Substring is that slice can take negative values but the substring function cannot.
+            console.log(str.substr(0,7))
+            // 0 in substr indicates to which index value to start from and 5 indicates that how many index values to cover.
+
+            //Replacing Substring
+            console.log(str.replace("Paarth","Kabir"))
+            //Uppercase or Lowercase 
+            console.log(str.toUpperCase());//Uppercase 
+            console.log(str.toLowerCase()); //Lowercase
+
+            //Concatination Method (Joining two strings)
+            console.log(str.concat(" Is a Very Good Boy"))
+
+            //Trim Func removes Whitespaces
+            var nstr= "    My     name      is           Paarth    ";
+            console.log(nstr);
+            console.log(nstr.trim()); //Removes Whitespaces only from the Begin of the String and the end of the string
+
+            // Extracting Character from a String
+            console.log(str.charAt(0))
+            
+         
+
+
+
+        </script>
+        </div>
+    </body>
+</html>
