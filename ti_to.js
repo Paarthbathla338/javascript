@@ -11,16 +11,32 @@ function greet(name,byetext){
 
 
 // Working with Functions
-let username=prompt("Enter Username");
-let al=alert("Username Created")
-let password=prompt("Enter Password")
-let al1=alert("Password Created")
+let u1=prompt("Enter Username");
 
-
-if (username.length>1){
-    console.log(al)
+if(u1.length>1){
+    alert("Username Created!");
+}
+else{
+    alert("Please Enter a Username!");
 }
 
-if (password.length>1){
-    console.log(al1)
+let pass=prompt("Enter Password");
+
+if(pass.length>1){
+    alert("Account Created");
 }
+
+let u2=prompt("Enter Username for Authentications");
+let pass2=prompt("Enter Password for Authentications");
+
+
+if(u1.toLowerCase() !=u2.toLowerCase() ,pass2.toLowerCase() != pass.toLowerCase()){
+    alert("Login Failed. Please Refresh Page and Retry");
+}
+else{
+    alert("Logined")
+}
+
+
+
+
